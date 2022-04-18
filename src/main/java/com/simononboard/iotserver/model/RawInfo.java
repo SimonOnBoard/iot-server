@@ -11,9 +11,9 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @Builder
 public class RawInfo {
-    private SensorId sensorID;
+    private SensorId sensorId;
     private SensorType sensorType;
     private MessageType messageType;
-    private TypeValue typeVariable;
+    private TypeValue typeValue;
     private String value;
 }
