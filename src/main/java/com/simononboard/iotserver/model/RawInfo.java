@@ -16,4 +16,14 @@ public class RawInfo {
     private MessageType messageType;
     private TypeValue typeValue;
     private String value;
+
+    public Measurement convertToMeasurement() {
+        return Measurement.builder()
+                .messageType(messageType)
+                .sensorId(sensorId)
+                .sensorType(sensorType)
+                .typeValue(typeValue)
+                .value(value)
+                .build();
+    }
 }
