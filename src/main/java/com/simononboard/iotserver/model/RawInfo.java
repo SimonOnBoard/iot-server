@@ -24,6 +24,7 @@ public class RawInfo {
                 .sensorType(sensorType)
                 .typeValue(typeValue)
                 .value(value)
+                .timestamp(System.currentTimeMillis())
                 .build();
     }
 }
